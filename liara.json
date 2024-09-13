@@ -1,0 +1,12 @@
+{
+    "disks": [
+        {
+            "name": "app",
+            "mountTo": "src"
+        },
+        {
+            "name": "files",
+            "mountTo": "media"
+        }
+    ]
+}

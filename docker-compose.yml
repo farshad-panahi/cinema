@@ -1,0 +1,10 @@
+services:
+  db:
+    image: farshadpj/py-postgres16-3:latest
+    environment:
+      - POSTGRES_PASSWORD=secret
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data:/var/lib/pgsql/data
+    

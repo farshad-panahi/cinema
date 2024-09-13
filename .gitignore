@@ -1,0 +1,9 @@
+.env
+staticfiles
+static
+data
+.venv
+.liara*
+.vscode
+media/
+__pycache__/

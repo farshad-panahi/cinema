@@ -1,0 +1,32 @@
+{% load cinema_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>your ticket</title>
+
+</head>
+<body>
+    <h1>here's your ticket</h1>
+    <hr>
+    <ul>{{date}}
+        <li>Movie: {{movie_name}}</li>
+        <li>show time: {{slot}}</li>
+        <li>
+            seat numbers reserved for you:
+            <ul>
+                {% for seat in seat_numbers %}
+                    <li style="list-style-type: square;">{{seat}}</li>
+                {% endfor %}
+            </ol>
+        </li>
+    </ul>
+
+    <hr>
+    <h2>Reserved successfully - ${{seat_numbers |length|multiply:100}}</h2>
+
+</body>
+</html>
